@@ -1,28 +1,15 @@
-import './App.css';
 import styled from 'styled-components';
-
-const BasicTitle = styled.h1`
-  text-align: center;
-  text-transform: capitalize;
-`;
-
-const BasicButton = styled.button`
-  background: #654cff;
-  color: #654cff;
-  border: none;
-  cursor: pointer;
-  text-transform: capitalize;
-  padding: 0.25rem;
-  display: block;
-  width: 200px;
-  margin: 1rem auto;
-`;
+import BasicTitle from './components/BasicTitle';
+import { DefaultButton } from './components/Buttons'
 
 function App() {
   return (
-    <div style={{ padding: '2rem', backgroundColor: 'grey'}}>
+    <div>
       <BasicTitle>styled components</BasicTitle>
-      <button className="btn">Click Me!</button>
+      <BasicTitle red>styled components</BasicTitle>
+      <BasicTitle blue>styled components</BasicTitle>
+      <BasicTitle purple>styled components</BasicTitle>
+      <DefaultButton>Click Me!</DefaultButton>
     </div>
   );
 }
