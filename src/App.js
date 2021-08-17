@@ -1,10 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import styled from 'styled-components';
+
+const BasicTitle = styled.h1`
+  text-align: center;
+  text-transform: capitalize;
+`;
+
+const BasicButton = styled.button`
+  background: #654cff;
+  color: #654cff;
+  border: none;
+  cursor: pointer;
+  text-transform: capitalize;
+  padding: 0.25rem;
+  display: block;
+  width: 200px;
+  margin: 1rem auto;
+`;
 
 function App() {
   return (
     <div style={{ padding: '2rem', backgroundColor: 'grey'}}>
-      <h1 className="title">Styled Components</h1>
+      <BasicTitle>styled components</BasicTitle>
       <button className="btn">Click Me!</button>
     </div>
   );
